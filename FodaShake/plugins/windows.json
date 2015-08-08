@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "play-cam"
+        },
+        "cordova-plugin-shake": {
+            "PACKAGE_NAME": "play-cam"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "play-cam"
+        }
+    },
+    "dependent_plugins": {
+        "org.apache.cordova.device-motion": {
+            "PACKAGE_NAME": "play-cam"
+        }
+    }
+}

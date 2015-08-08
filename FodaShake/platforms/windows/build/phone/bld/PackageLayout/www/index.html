@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shake the Die!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script>
+document.addEventListener("deviceready", onDeviceReady, false);
+
+var lastX,lastY,lastZ;
+var moveCounter = 0;
+var audioPlayer;
+
+var shake;
+var currTime;
+var imagem;
+function onDeviceReady() {
+    navigator.accelerometer.watchAcceleration(gotMovement, errHandler, { frequency: 200 });
+    imagem = document.getElementById('swap');
+    audioPlayer = document.getElementById('demo');
+    shake = 0;
+}
+
+function errHandler(e) {
+	console.log("--- ERROR ---");
+	console.dir(e);
+}
+
+function gotMovement(a) {
+	if(!lastX) {
+		lastX = a.x;
+		lastY = a.y;
+		lastZ = a.z;
+		return;
+	}
+
+	var deltaX, deltaY, deltaZ;
+	deltaX = Math.abs(a.x-lastX);
+	deltaY = Math.abs(a.y-lastY);
+	deltaZ = Math.abs(a.z-lastZ);
+
+	if(deltaX + deltaY + deltaZ > 3) {
+		moveCounter++;
+	} else {
+		moveCounter = Math.max(0, --moveCounter);
+	}
+
+	if(deltaX !=0 || deltaY != 0 || deltaZ != 0) console.log(deltaX,deltaY,deltaZ,moveCounter);
+
+	if (moveCounter > 1) { gotshake(); moveCounter = 0; }
+
+	lastX = a.x;
+	lastY = a.y;
+	lastZ = a.z;
+
+
+}
+
+
+function gotshake(){
+    shake++;
+    if (audioPlayer.paused){
+        audioPlayer.play(); 
+        var new_image = new Image();
+        new_image.id = "theText";
+        new_image.src = imagem.src.replace(".png", ".gif");
+
+        imagem.parentNode.insertBefore(new_image, imagem);
+        imagem.parentNode.removeChild(imagem);
+        check();
+        audioPlayer.pause();
+        new_image = new Image();
+        new_image.id = "theText";
+        new_image.src = imagem.src.replace(".gif", ".png");
+
+        audioPlayer.currTime = 0;
+    } 
+}
+
+function updateImage() {
+    var image = document.getElementById("theText");
+    if (image.complete) {
+        var new_image = new Image();
+        //set up the new image
+        new_image.id = "theText";
+        new_image.src = image.src;
+        // insert new image and remove old
+        
+    }
+
+    setTimeout(updateImage, 1000);
+}
+
+
+
+function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds) {
+            break;
+        }
+    }
+}
+
+
+
+function check() {
+    var loop = 0;
+    while (loop <= shake) {
+        console.debug(shake);
+        sleep(1000);
+        loop++;
+    }
+    shake = 0;
+}
+
+    </script>
+    <style>
+        #die {
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 12em;
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="demo" preload="auto" hidden="hidden" >
+        <source src="Fodase.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <H1 Align=CENTER>  <img id="swap" src="foda.gif" /> </H1> 
+    
+
+</body>
+</html>

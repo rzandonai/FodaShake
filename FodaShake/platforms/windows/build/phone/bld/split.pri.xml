@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="com.play.cam" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://com.play.cam/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="SplashScreen.png" uri="ms-resource://com.play.cam/Files/images/SplashScreen.png"/>
+				<NamedResource name="SplashScreenPhone.png" uri="ms-resource://com.play.cam/Files/images/SplashScreenPhone.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\SplashScreenPhone.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://com.play.cam/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://com.play.cam/Files/images/Square30x30Logo.png"/>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://com.play.cam/Files/images/Square310x310Logo.png"/>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://com.play.cam/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://com.play.cam/Files/images/Square70x70Logo.png"/>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://com.play.cam/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://com.play.cam/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://com.play.cam/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="config.xml" uri="ms-resource://com.play.cam/Files/www/config.xml">
+					<Candidate type="Path">
+						<Value>www\config.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova.js" uri="ms-resource://com.play.cam/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://com.play.cam/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="foda.gif" uri="ms-resource://com.play.cam/Files/www/foda.gif">
+					<Candidate type="Path">
+						<Value>www\foda.gif</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="foda.png" uri="ms-resource://com.play.cam/Files/www/foda.png">
+					<Candidate type="Path">
+						<Value>www\foda.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Fodase.mp3" uri="ms-resource://com.play.cam/Files/www/Fodase.mp3">
+					<Candidate type="Path">
+						<Value>www\Fodase.mp3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://com.play.cam/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="css">
+					<NamedResource name="index.css" uri="ms-resource://com.play.cam/Files/www/css/index.css">
+						<Candidate type="Path">
+							<Value>www\css\index.css</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="img">
+					<NamedResource name="exit.gif" uri="ms-resource://com.play.cam/Files/www/img/exit.gif">
+						<Candidate type="Path">
+							<Value>www\img\exit.gif</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="logo.png" uri="ms-resource://com.play.cam/Files/www/img/logo.png">
+						<Candidate type="Path">
+							<Value>www\img\logo.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="index.js" uri="ms-resource://com.play.cam/Files/www/js/index.js">
+						<Candidate type="Path">
+							<Value>www\js\index.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="plugins">
+					<ResourceMapSubtree name="cordova-plugin-device-orientation">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="CompassProxy.js" uri="ms-resource://com.play.cam/Files/www/plugins/cordova-plugin-device-orientation/src/windows/CompassProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="compass.js" uri="ms-resource://com.play.cam/Files/www/plugins/cordova-plugin-device-orientation/www/compass.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-orientation\www\compass.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CompassError.js" uri="ms-resource://com.play.cam/Files/www/plugins/cordova-plugin-device-orientation/www/CompassError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-orientation\www\CompassError.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CompassHeading.js" uri="ms-resource://com.play.cam/Files/www/plugins/cordova-plugin-device-orientation/www/CompassHeading.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-shake">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="shake.js" uri="ms-resource://com.play.cam/Files/www/plugins/cordova-plugin-shake/www/shake.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-shake\www\shake.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="org.apache.cordova.device-motion">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="AccelerometerProxy.js" uri="ms-resource://com.play.cam/Files/www/plugins/org.apache.cordova.device-motion/src/windows/AccelerometerProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\org.apache.cordova.device-motion\src\windows\AccelerometerProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Acceleration.js" uri="ms-resource://com.play.cam/Files/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.device-motion\www\Acceleration.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="accelerometer.js" uri="ms-resource://com.play.cam/Files/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js">
+								<Candidate type="Path">
+									<Value>www\plugins\org.apache.cordova.device-motion\www\accelerometer.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="scripts">
+					<NamedResource name="index.js" uri="ms-resource://com.play.cam/Files/www/scripts/index.js">
+						<Candidate type="Path">
+							<Value>www\scripts\index.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="platformOverrides.js" uri="ms-resource://com.play.cam/Files/www/scripts/platformOverrides.js">
+						<Candidate type="Path">
+							<Value>www\scripts\platformOverrides.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="winstore-jscompat.js" uri="ms-resource://com.play.cam/Files/www/scripts/winstore-jscompat.js">
+						<Candidate type="Path">
+							<Value>www\scripts\winstore-jscompat.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="www">
+					<NamedResource name="index.html" uri="ms-resource://com.play.cam/Files/www/www/index.html">
+						<Candidate type="Path">
+							<Value>www\www\index.html</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="css">
+						<NamedResource name="index.css" uri="ms-resource://com.play.cam/Files/www/www/css/index.css">
+							<Candidate type="Path">
+								<Value>www\www\css\index.css</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="img">
+						<NamedResource name="exit.gif" uri="ms-resource://com.play.cam/Files/www/www/img/exit.gif">
+							<Candidate type="Path">
+								<Value>www\www\img\exit.gif</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="logo.png" uri="ms-resource://com.play.cam/Files/www/www/img/logo.png">
+							<Candidate type="Path">
+								<Value>www\www\img\logo.png</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="js">
+						<NamedResource name="index.js" uri="ms-resource://com.play.cam/Files/www/www/js/index.js">
+							<Candidate type="Path">
+								<Value>www\www\js\index.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

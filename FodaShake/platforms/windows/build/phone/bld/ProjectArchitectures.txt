@@ -1,0 +1,1 @@
+C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\FodaShake\FodaShake\platforms\windows\CordovaApp.Phone.jsproj;arm

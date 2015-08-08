@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\FodaShake\FodaShake\platforms\windows\build\phone\release\arm\CordovaApp.Phone_0.0.1.0_arm.appx
+ResourcePack=C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\FodaShake\FodaShake\platforms\windows\build\phone\release\arm\CordovaApp.Phone_0.0.1.0_scale-100.appx
